@@ -70,7 +70,7 @@ Copy the below css (which can also be found in the [tlx.css](/tlx.css) file in t
 
 ```css
 #nasa-tlx .track {
-    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
+    background-image: url(https://github.com/PaulioRandall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
     background-size: 770px 80px !important;
     background-repeat: no-repeat;
     height: 80px !important;
@@ -96,7 +96,7 @@ Copy the below css (which can also be found in the [tlx.css](/tlx.css) file in t
     statement then change '5' to '4'.
 */
 #nasa-tlx .slider-container:nth-child(5) .track {
-    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
+    background-image: url(https://github.com/PaulioRandall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
     background-size: 770px 80px !important;
     background-repeat: no-repeat;
     height: 80px !important;
