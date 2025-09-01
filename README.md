@@ -97,9 +97,6 @@ Copy the below css (which can also be found in the [tlx.css](/tlx.css) file in t
 */
 #nasa-tlx .slider-container:nth-child(5) .track {
     background-image: url(https://github.com/PaulioRandall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
-    background-size: 770px 80px !important;
-    background-repeat: no-repeat;
-    height: 80px !important;
 }
 
 #nasa-tlx .labels-container {
