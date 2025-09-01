@@ -1,5 +1,5 @@
 #nasa-tlx .track {
-    background-image: url(https://github.com/CMU-TBD/qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
+    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
     background-size: 770px 80px !important;
     background-repeat: no-repeat;
     height: 80px !important;
@@ -15,4 +15,19 @@
 
 #nasa-tlx .slider-container {
     height: 200px;
+}
+
+#nasa-tlx .slider-container:nth-child(5) .track {
+    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
+    background-size: 770px 80px !important;
+    background-repeat: no-repeat;
+    height: 80px !important;
+}
+
+#nasa-tlx .labels-container {
+  display: none;
+}
+
+#nasa-tlx .sliderGrid {
+  margin-top: 0.5rem;
 }
