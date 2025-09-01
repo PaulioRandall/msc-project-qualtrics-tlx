@@ -1,6 +1,8 @@
 # qualtrics-tlx
 
-Custom css for NASA-TLX in Qualtrics
+Custom css for NASA-TLX in Qualtrics.
+
+> Forked from [CMU-TBD/qualtrics-tlx](https://github.com/CMU-TBD/qualtrics-tlx) to replace _Performance_ axis labels with those from the original questionnaire, i.e. _"Perfect - Failure"_ instead of _"Very Low - Very High"_.
 
 ## Summary
 
