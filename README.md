@@ -52,13 +52,14 @@ With the question selected, scroll down on the left sidebar until you see “</>
 There will probably be some Qualtrics template JS already there. The function you want to edit is the first one, `Qualtrics.SurveyEngine.addOnload()`.
 Turn the `onLoad()` function into the following by copy-pasting the code between the brackets into what’s already there:
 
-    Qualtrics.SurveyEngine.addOnload(function()
-    {
-    	/*Place your JavaScript here to run when the page loads*/
-    	var qid = this.questionId;
-    	jQuery('#' + qid).attr("id", "nasa-tlx");
-
-    });
+```js
+Qualtrics.SurveyEngine.addOnload(function()
+{
+    /* Place your JavaScript here to run when the page loads */
+    var qid = this.questionId;
+    jQuery('#' + qid).attr("id", "nasa-tlx");
+});
+```
 
 This finds the html element that is your question and changes its `id` to `nasa-tlx`. This is necessary because Qualtrics changes question IDs as you add new questions, Auto-number, etc. By always assigning this question the same `id` when it loads, you have a reliable identifier for it.
 Make sure you don’t somehow give an `id` of `nasa-tlx` to any other element in your survey. (Not that there’d be any reason to do that.)
@@ -67,24 +68,48 @@ Make sure you don’t somehow give an `id` of `nasa-tlx` to any other element in
 
 Copy the below css (which can also be found in the [tlx.css](/tlx.css) file in this repo):
 
-    #nasa-tlx .track {
-        background-image: url(https://github.com/CMU-TBD/qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
-        background-size: 770px 80px !important;
-        background-repeat: no-repeat;
-        height: 80px !important;
-    }
+```css
+#nasa-tlx .track {
+    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
+    background-size: 770px 80px !important;
+    background-repeat: no-repeat;
+    height: 80px !important;
+}
 
-    #nasa-tlx .handle {
-        top: 15px !important;
-    }
+#nasa-tlx .handle {
+    top: 15px !important;
+}
 
-    #nasa-tlx .statement {
-        padding-bottom: 4px;
-    }
+#nasa-tlx .statement {
+    padding-bottom: 4px;
+}
 
-    #nasa-tlx .slider-container {
-        height: 200px;
-    }
+#nasa-tlx .slider-container {
+    height: 200px;
+}
+
+/* 
+    If you've added, removed, or rearranged the statements/questions
+    then change the number accordingly so that the performance axis
+    is applied to the correct slider. It will be the number of the
+    statement plus 1. e.g: if you've only removed the Physical Demand
+    statement then change '5' to '4'.
+*/
+#nasa-tlx .slider-container:nth-child(5) .track {
+    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
+    background-size: 770px 80px !important;
+    background-repeat: no-repeat;
+    height: 80px !important;
+}
+
+#nasa-tlx .labels-container {
+  display: none;
+}
+
+#nasa-tlx .sliderGrid {
+  margin-top: 0.5rem;
+}
+```
    
 Go to the Style tab of your survey’s Look and Feel, and paste it into the Custom CSS box.
 
