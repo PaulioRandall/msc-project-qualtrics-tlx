@@ -1,5 +1,5 @@
 #nasa-tlx .track {
-    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
+    background-image: url(https://github.com/PaulioRandall/msc-project-qualtrics-tlx/blob/main/tlx-scale.jpg?raw=true);
     background-size: 770px 80px !important;
     background-repeat: no-repeat;
     height: 80px !important;
@@ -17,8 +17,15 @@
     height: 200px;
 }
 
+/* 
+    If you've added, removed, or rearranged the statements/questions
+    then change the number accordingly so that the performance axis
+    is applied to the correct slider. It will be the number of the
+    statement plus 1. e.g: if you've only removed the Physical Demand
+    statement then change '5' to '4'.
+*/
 #nasa-tlx .slider-container:nth-child(5) .track {
-    background-image: url(https://github.com/Paulio-Randall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
+    background-image: url(https://github.com/PaulioRandall/msc-project-qualtrics-tlx/blob/main/tlx-scale-performance.jpg?raw=true);
     background-size: 770px 80px !important;
     background-repeat: no-repeat;
     height: 80px !important;
